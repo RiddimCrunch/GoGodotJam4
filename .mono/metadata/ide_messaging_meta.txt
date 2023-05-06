@@ -1,2 +1,2 @@
-﻿52041
-C:/Users/1957527/Desktop/godot/Godot_v3.5-stable_mono_win32/Godot_v3.5-stable_mono_win32.exe
+﻿57828
+C:/Users/nicol/AppData/Local/Godot/Godot_v3.5-stable_mono_win64.exe

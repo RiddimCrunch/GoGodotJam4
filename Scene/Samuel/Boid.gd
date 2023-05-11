@@ -8,13 +8,17 @@ var movement_vector := Vector2.ZERO
 
 var random_number_x = rand_range(-1, 1)
 var random_number_y = rand_range(-1, 1)
+var direction = Vector2.ZERO
 
 func _process(delta):
 	_move()
 
 func _move():
+	direction.x = (position + velocity).y
+	direction.y = -(position + velocity).x
 	movement_vector = _get_movement()
-	velocity = move_and_slide(lerp(velocity, movement_vector * SPEED, ACCEL), Vector2.UP)
+	velocity = move_and_slide(lerp(velocity, movement_vector * SPEED, ACCEL))
+	look_at(direction)
 	
 #Function to get the movement
 func _get_movement():

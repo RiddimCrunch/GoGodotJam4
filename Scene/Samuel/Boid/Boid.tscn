@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scene/Samuel/Boid/Boid.gd" type="Script" id=1]
+[ext_resource path="res://Scene/Samuel/Boid/sprites/Arrow.png" type="Texture" id=2]
+
+[node name="Boid" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="BoidSprite" type="Sprite" parent="."]
+position = Vector2( 1.61354, 2.23908e-13 )
+rotation = 1.5708
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )

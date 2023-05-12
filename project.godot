@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="GameJam2023"
+run/main_scene="res://Scene/Samuel/Boid/BoidSpawn.tscn"
 config/icon="res://Assets/icon.png"
 
 [gui]

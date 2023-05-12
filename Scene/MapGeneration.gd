@@ -20,12 +20,7 @@ var boids = []
 export(PackedScene) var Boid
 
 func _ready():
-	for i in range(NUM_BOIDS):
-		var boid = Boid.instance()
-		boid.Mover(Vector2(rand_range(0, 500), rand_range(0, 500)), Vector2(rand_range(-5, 5), rand_range(-5, 5)))
-		boids.append(boid)
-		add_child(boid)
+	pass
 
 func _process(delta):
-	for boid in boids:
-		boid.flock(boids)
+	pass

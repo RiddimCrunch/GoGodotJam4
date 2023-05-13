@@ -7,7 +7,7 @@ var velocity = Vector2.ZERO
 var input_vector
 var screen_size
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	_moveAction()
 
 func _moveAction():

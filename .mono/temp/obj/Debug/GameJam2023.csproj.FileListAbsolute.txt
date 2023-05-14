@@ -7,3 +7,12 @@ C:\Users\1957527\Desktop\Nouveau dossier\GoGodotJam4\.mono\temp\bin\Debug\GameJa
 C:\Users\1957527\Desktop\Nouveau dossier\GoGodotJam4\.mono\temp\bin\Debug\GameJam2023.pdb
 C:\Users\1957527\Desktop\Nouveau dossier\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.dll
 C:\Users\1957527\Desktop\Nouveau dossier\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.pdb
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\bin\Debug\GameJam2023.dll
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\bin\Debug\GameJam2023.pdb
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.csproj.AssemblyReference.cache
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.AssemblyInfoInputs.cache
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.AssemblyInfo.cs
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.csproj.CoreCompileInputs.cache
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.dll
+C:\Users\1957527\Desktop\Nouveau dossier (2)\GoGodotJam4\.mono\temp\obj\Debug\GameJam2023.pdb

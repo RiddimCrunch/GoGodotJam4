@@ -17,6 +17,7 @@ var structureScale
 var scaledPoint
 var start
 var end
+var initBoidBValue
 
 func _ready():
 	_initBoids()
@@ -27,14 +28,17 @@ func _process(delta):
 	_processBoids(delta)
 
 func _initBoids():
+	initBoidBValue = $"../UI"._getCurrentValues()
 	for i in startingBoids:
 		randomize()
 		boid = Boid.instance()
 		initPosition = Vector2(rand_range(0, screenSize.x), rand_range(0, screenSize.y))
 		boid.position = initPosition
 		boid.add_to_group("boids")
+		boid.setValue(initBoidBValue)
 		boids.append(boid)
 		$Boids.add_child(boid)
+		$Boids.modulate = Color(86, 0, 144)
 
 
 func _buildStructure():

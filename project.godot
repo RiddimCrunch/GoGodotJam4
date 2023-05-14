@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="GameJam2023"
-run/main_scene="res://Scene/Samuel/TitleScreen/TitleScreen.tscn"
+run/main_scene="res://Scene/WorldA.tscn"
 config/icon="res://Assets/icon.png"
 
 [gui]

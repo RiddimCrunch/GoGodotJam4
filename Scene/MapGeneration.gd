@@ -20,7 +20,7 @@ var boids = []
 export(PackedScene) var Boid
 
 func _ready():
-	pass
+	$UI.hide()
 
 func _process(_delta):
 	pass

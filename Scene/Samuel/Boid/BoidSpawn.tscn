@@ -7,9 +7,4 @@
 script = ExtResource( 1 )
 Boid = ExtResource( 2 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 598.0
-color = Color( 0, 0, 0, 1 )
-
 [node name="Boids" type="Node2D" parent="."]

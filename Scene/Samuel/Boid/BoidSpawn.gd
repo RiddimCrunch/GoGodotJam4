@@ -18,6 +18,7 @@ var scaledPoint
 var start
 var end
 var initBoidBValue
+var color = Color(86, 0, 144)
 
 func _ready():
 	_initBoids()
@@ -26,6 +27,7 @@ func _process(delta):
 	_buildStructure()
 	_updateBoids()
 	_processBoids(delta)
+	$Boids.modulate = color
 
 func _initBoids():
 	initBoidBValue = $"../UI"._getCurrentValues()
@@ -38,7 +40,6 @@ func _initBoids():
 		boid.setValue(initBoidBValue)
 		boids.append(boid)
 		$Boids.add_child(boid)
-		$Boids.modulate = Color(86, 0, 144)
 
 
 func _buildStructure():
@@ -71,3 +72,9 @@ func _processGroupBoid(data):
 	for i in range(start, end):
 		boids[i].process(data.delta)
 
+func setColor(value: Color):
+	color = value
+
+
+func _on_Color_color_changed(color):
+	setColor(color)

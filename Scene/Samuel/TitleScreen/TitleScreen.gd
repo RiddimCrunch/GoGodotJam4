@@ -20,6 +20,8 @@ func _on_StartBtn_pressed():
 	container.hide()
 	title.hide()
 	$"../UI".show()
+	$"../Color".show()
+	$"../ColorPick".show()
 
 func _on_QuitBtn_pressed():
 	get_tree().quit()

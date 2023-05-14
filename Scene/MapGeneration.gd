@@ -21,6 +21,9 @@ export(PackedScene) var Boid
 
 func _ready():
 	$UI.hide()
+	$Color.hide()
+	$ColorPick.hide()
 
 func _process(_delta):
-	pass
+	$ColorPick.set_position(Vector2(750, 550))
+	$Color.set_position(Vector2(760, 570))

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/JOXION - 094 [Arcade Release].mp3-7d37a4e869484ef6193a018d0232d185.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/JOXION - 094 [Arcade Release].mp3"
+dest_files=[ "res://.import/JOXION - 094 [Arcade Release].mp3-7d37a4e869484ef6193a018d0232d185.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

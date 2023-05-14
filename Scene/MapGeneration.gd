@@ -23,7 +23,11 @@ func _ready():
 	$UI.hide()
 	$Color.hide()
 	$ColorPick.hide()
+	$AddBoid.hide()
+	$RemoveBoid.hide()
 
 func _process(_delta):
 	$ColorPick.set_position(Vector2(750, 550))
 	$Color.set_position(Vector2(760, 570))
+	$AddBoid.set_position(Vector2(150, 570))
+	$RemoveBoid.set_position(Vector2(230, 570))

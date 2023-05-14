@@ -13,7 +13,7 @@ Boid = ExtResource( 2 )
 [node name="TitleScreen" parent="." instance=ExtResource( 5 )]
 
 [node name="RandomSpawn" parent="." instance=ExtResource( 3 )]
-startingBoids = 200
+startingBoids = 30
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
 
@@ -29,4 +29,16 @@ margin_right = 12.0
 margin_bottom = 20.0
 text = "Boid"
 
+[node name="AddBoid" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Add Boid"
+
+[node name="RemoveBoid" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Remove Boid"
+
 [connection signal="color_changed" from="Color" to="RandomSpawn" method="_on_Color_color_changed"]
+[connection signal="pressed" from="AddBoid" to="RandomSpawn" method="_on_AddBoid_pressed"]
+[connection signal="pressed" from="RemoveBoid" to="RandomSpawn" method="_on_RemoveBoid_pressed"]

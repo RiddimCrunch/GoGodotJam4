@@ -22,6 +22,7 @@ var color = Color(86, 0, 144)
 
 func _ready():
 	_initBoids()
+	$"../Color".color = Color(86, 0, 144)
 
 func _process(delta):
 	_buildStructure()
@@ -78,3 +79,23 @@ func setColor(value: Color):
 
 func _on_Color_color_changed(color):
 	setColor(color)
+
+func _on_AddBoid_pressed():
+	randomize()
+	boid = Boid.instance()
+	initPosition = Vector2(rand_range(0, screenSize.x), rand_range(0, screenSize.y))
+	boid.position = initPosition
+	boid.add_to_group("boids")
+	boid.setValue(initBoidBValue)
+	boids.append(boid)
+	$Boids.add_child(boid)
+	scaledPoints.resize(boids.size())
+
+
+func _on_RemoveBoid_pressed():
+	if boids.size() != 1:
+		var index = randi() % boids.size()
+		var boid = boids[index]
+		boids.remove(index)
+		$Boids.remove_child(boid)
+		boid.queue_free()

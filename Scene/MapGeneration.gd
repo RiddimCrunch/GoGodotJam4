@@ -22,5 +22,5 @@ export(PackedScene) var Boid
 func _ready():
 	pass
 
-func _process(delta):
+func _process(_delta):
 	pass

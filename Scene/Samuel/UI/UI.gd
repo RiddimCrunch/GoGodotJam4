@@ -6,7 +6,6 @@ func _process(delta):
 	$Container/Separation.set_position(Vector2(550,550))
 	$Container/Speed.set_position(Vector2(650,550))
 
-
 func _getCurrentValues() -> Dictionary:
 	var values = {}
 	for ui in $Container.get_children():

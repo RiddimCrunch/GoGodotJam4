@@ -1,14 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scene/MapGeneration.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Samuel/Boid/Boid.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scene/Samuel/Boid/BoidSpawn.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scene/Samuel/Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Samuel/UI/UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Samuel/TitleScreen/TitleScreen.tscn" type="PackedScene" id=5]
 
 [node name="WorldA" type="Node2D"]
 script = ExtResource( 1 )
 Boid = ExtResource( 2 )
 
+[node name="TitleScreen" parent="." instance=ExtResource( 5 )]
+
 [node name="RandomSpawn" parent="." instance=ExtResource( 3 )]
 
-[node name="Player" parent="." instance=ExtResource( 4 )]
+[node name="UI" parent="." instance=ExtResource( 4 )]

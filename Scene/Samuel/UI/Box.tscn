@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scene/Samuel/UI/Box.gd" type="Script" id=1]
+
+[node name="Box" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="VerticalContainer" type="VBoxContainer" parent="."]
+margin_right = 74.0
+margin_bottom = 53.0
+
+[node name="Title" type="Label" parent="VerticalContainer"]
+margin_right = 74.0
+margin_bottom = 14.0
+text = "Title"
+align = 3
+
+[node name="SpinBox" type="SpinBox" parent="VerticalContainer"]
+margin_top = 18.0
+margin_right = 74.0
+margin_bottom = 42.0
+
+[connection signal="value_changed" from="VerticalContainer/SpinBox" to="." method="_on_SpinBox_value_changed"]

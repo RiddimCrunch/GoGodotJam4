@@ -133,3 +133,19 @@ func _avoidScreenEdge():
 func _wrapScreen():
 	position.x = wrapf(position.x, 0, screenSize.x)
 	position.y = wrapf(position.y, 0, screenSize.y)
+
+func setValue(params: Dictionary):
+	for param in params.keys():
+		set(param, params[param])
+
+func setSpeed(value: float):
+	maxSpeed = value
+
+func setCohesion(value: float):
+	cohesion = value
+
+func setAlignment(value: float):
+	alignment = value
+
+func setSeparation(value: float):
+	separation = value

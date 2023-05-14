@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scene/Samuel/UI/Box.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/Samuel/UI/UI.gd" type="Script" id=2]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Container" type="HBoxContainer" parent="."]
+margin_right = 227.0
+margin_bottom = 40.0
+
+[node name="Cohesion" parent="Container" instance=ExtResource( 1 )]
+margin_right = 0.0
+param = "Cohesion"
+initValue = 2
+maxValue = 1000
+
+[node name="Alignment" parent="Container" instance=ExtResource( 1 )]
+margin_left = 4.0
+margin_right = 4.0
+param = "Alignment"
+initValue = 3
+maxValue = 1000
+
+[node name="Separation" parent="Container" instance=ExtResource( 1 )]
+margin_left = 8.0
+margin_right = 8.0
+param = "Separation"
+initValue = 5
+maxValue = 1000
+
+[node name="Speed" parent="Container" instance=ExtResource( 1 )]
+margin_left = 12.0
+margin_right = 12.0
+param = "Speed"
+initValue = 100
+maxValue = 1000
